@@ -1,26 +1,37 @@
 /* Common properti */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.container{
+.container {
     width: 1240px;
     margin: 0 auto;
 }
 
-.background-color{
+.background-color {
     background-color: rgb(254, 234, 233);
 }
 
+.text_paragraph {
+    color: rgb(78, 78, 78);
+}
 
 /* navbar section */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0px;
 }
-.search-bar{
+
+figure {
+    margin-left: 0px;
+}
+
+.search-bar {
     position: relative;
 }
-.search-bar input{
+
+.search-bar input {
     background-color: rgb(241, 241, 241);
     border: none;
     width: 500px;
@@ -28,7 +39,8 @@
     border-radius: 65px;
     font-size: 1.2rem;
 }
-.search-bar i{
+
+.search-bar i {
     position: absolute;
     top: 15px;
     right: 30px;
@@ -36,14 +48,106 @@
     color: rgb(186, 186, 186);
 
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
     gap: 10px;
-    
+
 }
 
-ul a{
+ul a {
     text-decoration: none;
     color: rgb(112, 112, 112);
+}
+
+
+
+/* hero section styles */
+
+
+
+
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+
+}
+
+.hero_left_sight h1 {
+    font-size: 3rem;
+    font-family: poppins;
+}
+
+.hero_left_sight p {
+    max-width: 450px;
+}
+
+.hero_section img {
+    width: 400px;
+}
+
+span {
+    color: rgb(255, 19, 111);
+    font-family: Poppins;
+    font-size: 41px;
+    font-weight: 500;
+}
+
+button {
+
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%, rgb(255, 19, 111) 99.994%);
+    padding: 14px 20px 14px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* cetegoris section */
+
+.cetegoris_container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 75px;
+
+    
+}
+.categories h1 {
+    color: rgb(31, 31, 31);
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.watch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 359px;
+    height: 120px;
+    background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%, rgb(255, 208, 25) 84.486%);
+    border-radius: 10px;
+}
+
+.watch h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.watch img {
+    height: 90px;
+}
+
+.bag{
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);;
+}
+.shoes{
+    background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
 }
